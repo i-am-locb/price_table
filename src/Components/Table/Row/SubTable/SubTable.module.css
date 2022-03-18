@@ -1,0 +1,25 @@
+.subTable {
+  width: calc(100% - 10em);
+  margin: 1em auto;
+  border-spacing: 0;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 5em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.subTable__body .subTable__row:nth-child(2n+1) {
+  background-color: #2f1f3a;
+}
+.subTable__body .subTable__row:nth-child(2n + 2) {
+  background-color: #252238;
+}
+
+.subTable__item {
+  height: 3em;
+  border: 1px solid #423c64;
+  position: relative;
+}

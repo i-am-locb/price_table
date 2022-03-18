@@ -1,0 +1,157 @@
+.table {
+  font-size: 1rem;
+  width: 50em;
+  margin: 4em auto;
+  color: white;
+  border-spacing: 0;
+  text-align: center;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  box-shadow: 0 0 10px 5px #610855;
+}
+
+.table__title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.table__column {
+  width: 10em;
+}
+
+.table__head .table__item:first-child {
+  border-top-left-radius: 2em;
+}
+.table__head .table__item:last-child {
+  border-top-right-radius: 2em;
+}
+
+.table__head .table__item:first-child,
+.table__head .table__item:nth-child(2){
+}
+.table__head .table__item:first-child p,
+.table__head .table__item:nth-child(2) p{
+  display: inline-block;
+  margin-right: 1em;
+  line-height: 3em;
+  vertical-align: middle;
+}
+
+.table_sortButtons{
+  display: inline-block;
+  height: 3em;
+  vertical-align: middle;
+}
+.table_sortButtonUp{
+  width: 0;
+  height: 0;
+  border: 0.5em solid transparent;
+  border-bottom-color: white;
+  border-top: 0;
+  margin-bottom: 0.5em;
+  margin-top: 0.75em;
+  cursor: pointer;
+}
+.table_sortButtonDown{
+
+  width: 0;
+  height: 0;
+  border: 0.5em solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  cursor: pointer;
+}
+
+.table__item {
+  height: 3em;
+  border: 1px solid #423c64;
+  position: relative;
+}
+
+.table__item span:first-child {
+  margin-right: 2em;
+}
+
+.table__tooltip {
+  font-size: 1em;
+  z-index: 1;
+  width: 12em;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: #423c64;
+  display: none;
+}
+
+.table__item_red {
+  color: red;
+}
+.table__item_green {
+  color: green;
+}
+
+.table__favorite {
+  width: 1.3em;
+  filter: invert(100%);
+}
+
+.table__body .table__row:nth-child(4n + 1) {
+  background-color: #2f1f3a;
+}
+.table__body .table__row:nth-child(4n + 3) {
+  background-color: #252238;
+}
+
+.table__row_details {
+  /* display: inline; */
+  width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in;
+}
+
+.table__row_details .table__item {
+  width: 100%;
+  height: 0em;
+  border: none;
+  border-left: 1px solid #423c64;
+  border-right: 1px solid #423c64;
+  transition: height 0.3s ease-out;
+  position: relative;
+
+}
+
+
+.table__svgFavorite svg{
+  width: 1.5em;
+  height: 1.5em;
+  stroke: white;
+  fill: transparent;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.table__svgFavorite_favorite svg{
+  stroke: gold;
+  fill: gold;
+}
+
+
+.table__svgArrow svg{
+  width: 1.1em;
+  height: 1.1em;
+  stroke: white;
+  cursor: pointer;
+  transform:  scale(1.2);
+  transition: transform 0.3s ease-in;
+  transform-origin: 50% 40%;
+}
+
+.table__svgArrow_up svg{
+  transform:  rotate(180deg);
+
+}
